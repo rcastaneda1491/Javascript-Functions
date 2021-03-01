@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./index.css">
+	<link rel="icon" type="image/png" href="./img/icon.svg">
+	<link rel="stylesheet" href="./fontello.css">
+	<link rel="stylesheet" href="./menu.css">
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<title>eLearning | Portafolio</title>
+</head>
+
+<body>
+	<header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-th-list"></label>
+        <nav class="menu">
+            <ul>
+                <li><a id="nav-activo" href="#">Portafolio</a>
+                </li>
+                <li class="submenu"><a href="#">Módulos<span class="icon-down-open"></span></a>
+                <ul>
+                    <li><a target="_blank" href="./calculadora/calculadora.html">Calculadora</a></li>
+                    <li><a target="_blank" href="./submenu/suscripciones.html">Submenú</a></li>
+                    <li><a target="_blank" href="./reloj-calendario/relojCalendario-ErickEcheverria.html">Reloj/Calendario</a></li>
+                    <li><a target="_blank" href="./register/register.html">Validación de formularios</a></li>
+                </ul>
+                
+                </li>
+                <li class="submenu"><a href="#">Juegos<span class="icon-down-open"></span></a>
+                    <ul>
+                        <li><a target="_blank" href="./invasores/juegoInvasores.html">Invasores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+	<div id="main-div">
+		<div id="main-text">
+			<div id="main-logo-container">
+				<img id="main-logo" src="./img/nav-logo.svg" alt="main-logo">
+			</div>
+			<div id="main-description">
+				<h1>eLearning Courses</h1>
+				<p>
+					Somos una plataforma de aprendizaje online con un catálogo
+					amplio de cursos sobre algoritmos, diagramas de flujo,
+					metodologías, lenguajes de programación, etc.
+				</p>
+			</div>
+		</div>
+		<div id="main-images">
+			<div class="images">
+				<img src="./img/main1.svg" alt="main1">
+			</div>
+			<div class="images">
+				<img src="./img/main2.svg" alt="main2">
+			</div>
+			<div class="images">
+				<img src="./img/main3.svg" alt="main3">
+			</div>
+		</div>
+	</div>
+	<div id="title-courses">
+		<h2>Portafolio de Cursos</h2>
+	</div>
+
+	<div class="contenedor">
+		<div id="options">
+			<form id="formulario" action="">
+				<input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+			</form>
+			<div class="categorias" id="categorias">
+				<a href="#" class="activo">Todos</a>
+				<a href="#">Desarrollo</a>
+				<a href="#">Diseño</a>
+				<a href="#">Marketing</a>
+				<a href="#">Idiomas</a>
+			</div>
+		</div>
+
+		<section class="grid" id="grid">
+
+			<div class="item" data-categoria="desarrollo" data-etiquetas="desarrollo programacion javascript js"
+				data-descripcion="JavaScript">
+				<div class="item-contenido">
+					<img src="./img/js.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="desarrollo" data-etiquetas="desarrollo programacion python"
+				data-descripcion="Python">
+				<div class="item-contenido">
+					<img src="./img/python.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="desarrollo" data-etiquetas="desarrollo programacion java poo"
+				data-descripcion="Java">
+				<div class="item-contenido">
+					<img src="./img/java.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="diseño" data-etiquetas="diseño movil mobile design"
+				data-descripcion="UI y UX | Diseño Movil">
+				<div class="item-contenido">
+					<img src="./img/mobile-design.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="diseño" data-etiquetas="diseño grafico graphic design"
+				data-descripcion="Diseño Gráfico">
+				<div class="item-contenido">
+					<img src="./img/graphic-design.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="diseño" data-etiquetas="diseño design web"
+				data-descripcion="UI y UX | Diseño Web">
+				<div class="item-contenido">
+					<img src="./img/web-design.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="marketing" data-etiquetas="markenting ventas"
+				data-descripcion="Marketing y Ventas">
+				<div class="item-contenido">
+					<img src="./img/marketing-sales.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="marketing" data-etiquetas="marketing digital"
+				data-descripcion="Marketing Digital">
+				<div class="item-contenido">
+					<img src="./img/digital-marketing.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="marketing" data-etiquetas="marketing community manager"
+				data-descripcion="Community Manager">
+				<div class="item-contenido">
+					<img src="./img/community-manager.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="idiomas" data-etiquetas="idiomas aleman" data-descripcion="Idioma Aleman">
+				<div class="item-contenido">
+					<img src="./img/german.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="idiomas" data-etiquetas="idiomas italiano"
+				data-descripcion="Idioma Italiano">
+				<div class="item-contenido">
+					<img src="./img/italian.svg" alt="">
+				</div>
+			</div>
+
+			<div class="item" data-categoria="idiomas" data-etiquetas="idiomas frances"
+				data-descripcion="Idioma Frances">
+				<div class="item-contenido">
+					<img src="./img/french.svg" alt="">
+				</div>
+			</div>
+
+		</section>
+
+		<section class="overlay" id="overlay">
+			<div class="contenedor-img">
+				<button id="btn-cerrar-popup"><i class="fas fa-times"></i></button>
+				<img src="" alt="">
+			</div>
+			<p class="descripcion"></p>
+		</section>
+	</div>
+	<footer id="pie-pagina">
+		<p id="derechos">eLearning | Terminos y Condiciones</p>
+	</footer>
+	<script src="./unclick.js"></script>
+	<script src="https://unpkg.com/web-animations-js@2.3.2/web-animations.min.js"></script>
+	<script src="https://unpkg.com/muuri@0.8.0/dist/muuri.min.js"></script>
+	<script src="./index.js"></script>
+	<script src="./menu.js"></script>
+
+</body>
+
+</html>

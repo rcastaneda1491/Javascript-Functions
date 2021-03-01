@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    font-size: 24px;
+    height: 100vh;
+}
+/**/
+#main-div{
+    display: flex;
+    background-color: #6644ED;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-clock{
+    text-align: center;
+    align-items: center;
+}
+#main-text{
+    width: 50%;
+    padding: 0px 70px 0px 70px;
+}
+#pie-pagina {
+    padding-left: 40px;
+    background-color: #201F24;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    font-size: 15px;
+    color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+    #main-text{
+        width: 35%;
+    }
+    #main-div{
+        padding: 20px 0px 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #main-div{
+        padding: 35px 120px 35px 120px;
+        flex-direction: column;
+    }
+    #main-clock{
+        width: 100%;
+    }
+    #main-text{
+        width: 100%;
+    }
+    #navlogo-container{
+        width: 22%;
+    }
+    
+    #nav-items{
+        width: 78%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #main-div{
+        padding: 35px 70px 35px 70px;
+    }
+    #main-clock{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    #main-text{
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .div-card{
+        width: 70%;
+        margin-top: 50px;
+    }
+
+    #title-courses h2{
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #main-images{
+        display: none;
+    }
+}
+/* Inicio Juego - Invasores*/
+.grid {
+	width: 300px;
+	height: 400px;
+	border: solid black 10px;
+	display:inline-block;
+	flex-wrap: wrap;
+    
+}
+
+.grid div {
+	width: 20px;
+	height: 20px;
+    display: inline-block;
+    align-items: center;
+}
+
+.invader {
+	background-color: purple;
+	border-radius: 10px;
+}
+
+.shooter {
+	background-color: green;
+}
+
+.laser {
+	background-color: orange;
+}
+
+.boom {
+	background-color: red;
+}
+/* Fin juego*/

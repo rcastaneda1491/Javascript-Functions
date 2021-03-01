@@ -1,0 +1,366 @@
+body {
+  margin: 0;
+  font-size: 20px;
+} /* Reloj*/
+#main-div {
+  display: flex;
+  background-color: #6644ed;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-clock {
+  text-align: center;
+}
+#main-clock h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+#main-clock p {
+  font-size: 2.5rem;
+}
+/* Calendario */
+#calendario {
+  display: block;
+  border: 4px double black;
+  background-color: #fffafa;
+  text-align: center;
+  align-items: center;
+}
+/*tabla del calendario*/
+#diasc {
+  display: inline;
+  border-collapse: separate;
+  border-spacing: 4px;
+  text-align: center;
+  align-items: center;
+}
+#diasc th,
+#diasc td {
+  font: normal 14pt arial;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+}
+#diasc th {
+  color: #ffffff;
+  background-color: #7f62f1;
+  text-align: center;
+  align-items: center;
+}
+#diasc td {
+  color: #492736;
+  background-color: #9582e2;
+  text-align: center;
+  align-items: center;
+}
+/*línea de la fecha actual*/
+#fechaactual {
+  font: bold 12pt arial;
+  padding: 0.4em;
+}
+#fechaactual i {
+  cursor: pointer;
+}
+#fechaactual i:hover {
+  color: blue;
+  text-decoration: underline;
+}
+/*formulario de busqueda de fechas*/
+#buscafecha {
+  background-color: #663366;
+  color: #7f62f1;
+  padding: 5px;
+}
+#buscafecha select,
+#buscafecha input {
+  background-color: #7f62f1;
+  color: #ffffff;
+  font: bold 10pt arial;
+}
+#buscafecha [type="text"] {
+  text-align: center;
+}
+#buscafecha [type="button"] {
+  cursor: pointer;
+}
+/*cabecera del calendario*/
+#anterior {
+  float: left;
+  width: 100px;
+  font: bold 12pt arial;
+  padding: 0.5em 0.1em;
+  cursor: pointer;
+}
+#posterior {
+  float: right;
+  width: 100px;
+  font: bold 12pt arial;
+  padding: 0.5em 0.1em;
+  cursor: pointer;
+}
+#anterior:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#posterior:hover {
+  color: blue;
+  text-decoration: underline;
+}
+#titulos {
+  font: normal 20pt "arial black";
+  padding: 0.2em;
+}
+
+/* Fin Calendario */
+/* Comienzo Cronometro*/
+
+span {
+  font-weight: 300;
+  font-size: 100px;
+}
+.c-body {
+  width: 100vh;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.c-time {
+  background-color: #3e2b8b;
+  border-radius: 20px;
+  box-shadow: 11px 17px 22px 0 var(--shadow);
+}
+.c-time > .screen {
+  color: white;
+  margin: 10px;
+  text-align: center;
+}
+.c-btn {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  margin: 15px 100px;
+}
+.c-btn > button {
+  display: block;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  height: 80px;
+  border-radius: 50%;
+  color: rgb(143, 142, 142);
+  font-size: 50px;
+}
+button:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+  background: rgb(103, 29, 199);
+  color: rgb(255, 255, 255);
+}
+
+/* Fin Cronometro */
+#main-text {
+  width: 50%;
+  padding: 0px 70px 0px 70px;
+}
+#main-logo {
+  height: 100px;
+}
+
+#title-courses {
+  padding: 0 10% 0 10%;
+  margin-top: 50px;
+  text-align: center;
+}
+.pie-pagina {
+  background-color: #201f24;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 0;
+  height: 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  #main-text {
+    width: 35%;
+  }
+
+  #main-images {
+    width: 65%;
+  }
+
+  #main-div {
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  body{
+    width: 100vh;
+  }
+  #main-div {
+    padding: 35px 120px 35px 120px;
+    flex-direction: column;
+  }
+  #main-clock {
+    width: 100vh;
+  }
+  #calendario {
+    width: 100vh;
+  }
+  #main-text {
+    width: 100vh;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body{
+    width: 100%;
+  }
+  #main-clock {
+    width: 100%;
+  }
+  #calendario {
+    width: 100%;
+  }
+  #main-text {
+    width: 100%;
+  }
+  label {
+    display: inline-flex;
+  }
+  #main-div {
+    padding: 35px 70px 35px 70px;
+  }
+
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+  }
+  #main-clock {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #calendario {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #main-text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #main-images {
+    display: none;
+  }
+  body{
+    width: 100vh;
+  }
+  #main-clock {
+    width: 100vh;
+  }
+  #calendario {
+    width: 100vh;
+  }
+  #main-text {
+    width: 100vh;
+  }
+}
+/* Inicio temporizador */
+
+#container {
+  background-color: #7f62f1;
+  margin: 0 auto;
+  border: 5px solid #e8e8e8;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+/*label*/
+.label {
+  margin: 0;
+
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
+}
+
+#hour-label {
+  grid-area: 1 / 2 / 1 / 3;
+}
+
+#min-label {
+  grid-area: 1 / 3 / 1 / 4;
+}
+
+#sec-label {
+  grid-area: 1 / 4 / 1 / 5;
+}
+
+/*times*/
+.time {
+  justify-self: center;
+  align-self: center;
+
+  border: none;
+  background-color: #ffffff00;
+  font-size: 50px;
+  width: 70px;
+  height: 50px;
+}
+
+#hour {
+  grid-area: 2 / 2 / 2 / 3;
+}
+
+.semicolon {
+  justify-self: center;
+  align-self: center;
+
+  font-size: 30px;
+  margin: 0;
+}
+#p1 {
+  grid-area: 2 / 2 / 2 / 4;
+}
+
+#minute {
+  grid-area: 2 / 3 / 2 / 4;
+}
+
+#p2 {
+  grid-area: 2 / 3 / 2 / 5;
+}
+
+#sec {
+  grid-area: 2 / 4 / 2 / 5;
+}
+.btn {
+  align-self: center;
+
+  width: 100px;
+  height: 20px;
+
+  font-size: 15px;
+  justify-self: center;
+}
+
+#start {
+  grid-area: 3 / 2 / 3 / 4;
+}
+
+#reset {
+  grid-area: 3 / 3 / 3 / 5;
+}

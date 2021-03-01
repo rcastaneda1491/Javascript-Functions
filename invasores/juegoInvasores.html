@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./juegoInvasores.css">
+    <link rel="icon" type="image/png" href="#">
+    <title>Juego | Invasores</title>
+</head>
+<body>
+    <script language="Javascript" type="text/javascript" onclick="true">
+      document.oncontextmenu = function(){return false}
+
+      function clicDerecho(e){
+        var msg = "Las opciones de click se han deshabilitado";
+        if(e.which == 3){
+          alert(msg);
+        }
+        else if (event.button == 2){
+          alert(msg);
+
+          return false;
+        }
+        return true;
+      }
+      document.onmousedown = clicDerecho;
+    </script>
+    <div id="main-div">
+        <div id="main-text">
+            <div id="main-clock">
+                <h1> Juego | Invasores</h1>
+                <h1 class="results">0</h1>
+                <div class="grid"></div>
+                <script src="app.js"></script>
+                <br><br><br><br><br>
+            </div>
+        </div>
+    </div>
+  </div>
+    <script src="temporizador.js"></script>
+</body>
+</html>

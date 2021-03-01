@@ -1,0 +1,252 @@
+body {
+  font-size: 20px;
+  background-color: #e4e4e4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main-div {
+  display: flex;
+  background-color: #6644ed;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-text {
+  width: 50%;
+  padding: 0px 70px 0px 70px;
+}
+
+#main-images {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-right: 40px;
+}
+
+#main-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-logo {
+  height: 100px;
+}
+
+#title-courses {
+  padding: 0 10% 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
+
+#options {
+  padding: 40px 0;
+}
+
+#formulario {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.barra-busqueda {
+  width: 70%;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  padding: 0 20px;
+  border-radius: 100px;
+  border: none;
+  text-align: center;
+  font-size: 16px;
+}
+
+.categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.categorias a {
+  color: black;
+  margin: 10px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.categorias a.activo {
+  color: #6644ed;
+}
+
+.grid {
+  position: relative;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s linear 1s;
+}
+
+.grid.imagenes-cargadas {
+  opacity: 1;
+}
+
+.grid .item {
+  position: absolute;
+  display: block;
+  padding: 0;
+  margin: 10px;
+  width: calc(33.333333% - 20px);
+}
+
+.grid .item-contenido {
+  position: relative;
+}
+
+.grid .item img {
+  width: 100%;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.overlay.activo {
+  display: flex;
+}
+
+.overlay img {
+  max-width: 100%;
+}
+
+.overlay .descripcion {
+  display: block;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 10px;
+  max-width: 50%;
+}
+
+.contenedor-img {
+  position: relative;
+}
+
+.overlay #btn-cerrar-popup {
+  background: none;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: -20px;
+  top: -20px;
+}
+
+
+@media only screen and (max-width: 1200px) {
+  #main-text {
+    width: 35%;
+  }
+
+  #main-images {
+    width: 65%;
+  }
+
+  #main-div {
+    padding: 20px 0px 20px 0px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  #main-div {
+    padding: 35px 120px 35px 120px;
+    flex-direction: column;
+  }
+  #main-text {
+    width: 100%;
+  }
+
+  #main-images {
+    width: 100%;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  label {
+    display: inline-flex;
+  }
+
+  #main-div {
+    padding: 35px 70px 35px 70px;
+  }
+
+  .container-card {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #main-text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .div-card {
+    width: 70%;
+    margin-top: 50px;
+  }
+
+  #title-courses h2 {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .grid .item {
+    width: calc(50% - 20px);
+  }
+
+  .barra-busqueda {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #main-images {
+    display: none;
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./relojCalendario-ErickEcheverria.css">
+  <link rel="icon" type="image/png" href="../img/icon.svg">
+  <title>eLearning | Reloj y Calendario</title>
+</head>
+
+<body>
+  <div class="pie-pagina">
+    <h2>RELOJ Y CALENDARIO</h2>
+  </div>
+  <div id="main-div">
+    <div id="main-text">
+      <div id="main-clock">
+        <h1 id="time">00:00:00</h1>
+        <p id="date">date</p>
+      </div>
+    </div>
+  </div>
+  <div id="title-courses">
+    <hr>
+    <h2>Calendario</h2>
+  </div>
+  <div id="calendario">
+    <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
+    <div id="anterior" onclick="mesantes()"></div>
+    <div id="posterior" onclick="mesdespues()"></div>
+    <h2 id="titulos"></h2>
+    <table id="diasc">
+      <tr id="fila0">
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr id="fila1">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="fila2">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="fila3">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="fila4">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="fila5">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr id="fila6">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table><br><br>
+    <div id="buscafecha">
+      <form action="#" name="buscar">
+        <p>Buscar <br> MES:
+          <select name="buscames">
+            <option value="0">Enero</option>
+            <option value="1">Febrero</option>
+            <option value="2">Marzo</option>
+            <option value="3">Abril</option>
+            <option value="4">Mayo</option>
+            <option value="5">Junio</option>
+            <option value="6">Julio</option>
+            <option value="7">Agosto</option>
+            <option value="8">Septiembre</option>
+            <option value="9">Octubre</option>
+            <option value="10">Noviembre</option>
+            <option value="11">Diciembre</option>
+          </select>
+          Año:
+          <input type="text" name="buscaanno" maxlength="4" size="4" />
+          <br>
+          <input type="button" value="BUSCAR" onclick="mifecha()" />
+        </p>
+      </form>
+    </div>
+  </div>
+  <br>
+  </div>
+  <div id="main-div">
+    <div id="main-text">
+      <div id="main-clock">
+        <hr>
+        <h2>Temporizador</h2>
+        <div id="container">
+          <p id="hour-label" class="label">Horas</p>
+          <p id="min-label" class="label">Minutos</p>
+          <p id="sec-label" class="label">Segundos</p>
+          <input id="hour" type="number" max="99" min="0" value="0" class="time">
+          <p id="p1" class="semicolon">:</p><input id="minute" type="number" max="60" min="0" value="0" class="time">
+          <p id="p2" class="semicolon">:</p><input id="sec" type="number" max="60" min="0" value="0" class="time">
+          <button id="start" class="btn">Comenzar</button>
+          <button id="reset" class="btn">Reiniciar</button>
+        </div>
+      </div><br>
+    </div>
+  </div>
+  <footer class="pie-pagina">
+    <p id="derechos">eLearning | Terminos y Condiciones</p>
+  </footer>
+  <script src="../unclick.js"></script>
+  <script src="reloj.js"></script>
+  <script type="text/javascript" src="calendario.js"></script>
+  <script src="temporizador.js"></script>
+</body>
+
+</html>
